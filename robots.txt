@@ -1,4 +1,4 @@
 User-agent: *
 Disallow: /instagram
 
-Sitemap: https://instagramvn.github.io/sitemap.xml
+Sitemap: https://instadl.github.io/sitemap.xml
