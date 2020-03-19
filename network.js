@@ -3,14 +3,15 @@ window.addEventListener('load', function(e) {
         // $('#lovemychi').html("Online");
     updateConnectionStatus('Online', true);
   } else {
-        alert('Mất kết nối với internet, trang web cần kết nối để hoạt động dịch vụ');
+        $('#network').html("Đã Mất kết nối với internet,vui lòng kiểm tra lại");
+
     updateConnectionStatus('Offline', true);
   }
 }, false);
 
 window.addEventListener('online', function(e) {
   $(document).ready(function(){
-      $('#lovemychi').html("Đã kết nối trở lại");
+      $('#network').html("Đã kết nối trở lại");
 
   })
 
@@ -21,12 +22,9 @@ window.addEventListener('online', function(e) {
 
 window.addEventListener('offline', function(e) {
   $(document).ready(function(){
-            alert('Mất kết nối với internet, trang web cần kết nối để hoạt động dịch vụ');
-
-$('#lovemychi').html("Mất kết nối với internet");
+$('#network').html("Đã Mất kết nối với internet,vui lòng kiểm tra lại");
 
 });
   updateConnectionStatus('Offline', true);
-
   // Use offine mode.
 }, false);
