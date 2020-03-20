@@ -16,7 +16,7 @@ function showResults() {
     var speedKbps = (speedBps / 1024).toFixed(2);
     var speedMbps = (speedKbps / 1024).toFixed(2);
     var maxsp = "25Mbps";
-    var maxkb = "0.10kbps";
+    var maxkb = "10.00kbps";
     if(speedMbps < maxkb){
       alert("Kết nối không ổn định");
       $('#network').html("<i class='material-icons'>signal_wifi_off</i> Kết nối không ổn định,vui lòng kiểm tra lại");
