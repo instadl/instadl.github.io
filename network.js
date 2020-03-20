@@ -1,7 +1,6 @@
 window.addEventListener('load', function(e) {
   if (navigator.onLine) {
         // $('#lovemychi').html("Online");
-        location.reload();
     updateConnectionStatus('Online', true);
   } else {
         alert("Mất kết nối với internet");
