@@ -1,4 +1,4 @@
-var imageAddr = "http://www.tranquilmusic.ca/images/cats/Cat2.JPG" + "?n=" + Math.random();
+var imageAddr = "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/B%C3%A9_Y%C3%AAu_Ph%C6%B0%C6%A1ng_M%E1%BB%B9_Chi.jpg/402px-B%C3%A9_Y%C3%AAu_Ph%C6%B0%C6%A1ng_M%E1%BB%B9_Chi.jpg" + "?n=" + Math.random();
 var startTime, endTime;
 var downloadSize = 5616998;
 var download = new Image();
