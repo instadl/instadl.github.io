@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function(){
+        var url = 'http://newsapi.org/v2/top-headlines?' +
+          'country=us&' +
+          'apiKey=d2f39f3d27884aa1b7241751b258329a';
+
+          $.getJSON(url, function(data){
+            console.log(data.articles);
+            $( "<script/>", {
+              "type": "application/ld+json",
+              "html": JSON.stringify(data)
+              }).appendTo( "head" );
+            $.each(data.articles, function(i, item){
+              console.log(item.author);
+              var aut = item.author;
+              var title = item.title;
+              var description = item.description;
+              var urlImg = item.urlToImage;
+              var urlnews = item.url;
+              var datepu = item.publishedAt;
+              var content = item.content;
+              $(".row").append(`
+              <div class="col-sm-3">
+                <div class="dt">
+                  <img src="${urlImg}" class='img-thumbnail' style='width:240px; height:240px;' alt="${title}">
+                </div>
+                <p><span>${title} - ${aut}</span></p>
+                </div>
+              `);
+
+            });
+          });
+
+      });
+    </script>
+
+  </head>
+  <body>
+    <div class="container-fuild">
+      <div class="row">
+
+      </div>
+    </div>
+
+  </body>
+</html>
