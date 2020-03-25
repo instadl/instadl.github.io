@@ -18,7 +18,7 @@
           $.getJSON(url, function(data){
             console.log(data.articles);
             $( "<script/>", {
-              "type": "NewsArticle",
+              "type": "application/ld+json",
               "html": JSON.stringify(data)
               }).appendTo( "head" );
             $.each(data.articles, function(i, item){
