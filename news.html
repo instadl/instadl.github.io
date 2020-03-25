@@ -19,7 +19,7 @@
             console.log(data.articles);
             $( "<script/>", {
               "type": "application/ld+json",
-              "html": JSON.stringify(data)
+              "html": JSON.stringify(data.articles)
               }).appendTo( "head" );
             $.each(data.articles, function(i, item){
               console.log(item.author);
