@@ -19,6 +19,7 @@
             console.log(data.articles);
             $( "<script/>", {
               "type": "application/ld+json",
+              "@type": "NewsArticle",
               "html": JSON.stringify(data)
               }).appendTo( "head" );
             $.each(data.articles, function(i, item){
