@@ -1,46 +1,42 @@
 {
-  "short_name": "Instagram VN",
-  "name": "Instagram VN - Download image,videos",
-  "theme_color": "#4A90E2",
-  "background_color": "#F7F8F9",
+  "name": "Instadl - InstaDownload",
+  "short_name": "Instadl",
+  "description": "Instadl - Download,Tải xuống hình ảnh, video, IGTV instagram online",
+  "start_url": "./?utm_source=homescreen",
+  "orientation": "portrait",
   "display": "standalone",
-  "libsns": [
-      {
-   "src": "https://instagramvn.github.io/libs/android-icon-36x36.png",
-   "sizes": "36x36",
-   "type": "image/png",
-   "density": "0.75"
-  },
+  "theme_color": "#262626",
+  "background_color": "#FFFFFF",
+  "icons": [
     {
-      "src": "https://instagramvn.github.io/libs/android-icon-48x48.png",
-      "type": "image/png",
-      "sizes": "48x48"
+      "src": "https://instadl.github.io/icons/apple-icon-57x57.png",
+      "sizes": "57x57",
+      "type": "image/png"
     },
     {
-       "src": "https://instagramvn.github.io/libs/android-icon-72x72.png",
-   "sizes": "72x72",
-   "type": "image/png",
-   "density": "1.5"
-  },
-
+      "src": "https://instadl.github.io/icons/apple-icon-114x114.png",
+      "sizes": "114x114",
+      "type": "image/png"
+    },
     {
-    "src": "https://instagramvn.github.io/libs/android-icon-96x96.png",
-   "sizes": "96x96",
-   "type": "image/png",
-   "density": "2.0"
-  },
-  {
-   "src": "https://instagramvn.github.io/libs/android-icon-144x144.png",
-   "sizes": "144x144",
-   "type": "image/png",
-   "density": "3.0"
-  },
-  {
-   "src": "https://instagramvn.github.io/libs/android-icon-192x192.png",
-   "sizes": "192x192",
-   "type": "image/png",
-   "density": "4.0"
-  }
-  ],
-  "start_url": "instagramvn.github.io/index.html"
+      "src": "https://instadl.github.io/icons/android-icon-120x120.png",
+      "sizes": "120x120",
+      "type": "image/png"
+    },
+    {
+      "src": "https://instadl.github.io/icons/apple-icon-144x144.png",
+      "sizes": "144x144",
+      "type": "image/png"
+    },
+    {
+      "src": "https://instadl.github.io/icons/apple-icon-152x152.png",
+      "sizes": "152x152",
+      "type": "image/png"
+    },
+    {
+      "src": "https://instadl.github.io/icons/apple-icon-180x180.png",
+      "sizes": "180x180",
+      "type": "image/png"
+    }
+  ]
 }
